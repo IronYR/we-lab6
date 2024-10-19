@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <h2 id="currentMonth">March 2023</h2>
+            <button id="prevMonth">&lt;</button>
+            <button id="nextMonth">&gt;</button>
+            <button id="toggleView">Toggle View</button>
+        </div>
+        <div class="calendar-days" id="calendarDays"></div>
+        <div class="calendar-body" id="calendarBody"></div>
+    </div>
+    
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <h3>Add Event</h3>
+            <input type="text" id="eventName" placeholder="Event Name">
+            <button id="addEvent">Add</button>
+            <button id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
